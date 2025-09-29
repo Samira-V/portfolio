@@ -7,19 +7,19 @@ for (i = 0; i < accordion.length; i++) {
 
         this.classList.toggle("active");
 
-        this.style.backgroundColor = "var(--black)";
-        this.style.color = "var(--lightGray)";
+        this.style.backgroundColor = "var(--lightGray)";
+        this.style.color = "var(--black)";
         // this.style.padding = "10px";
 
         let panel = this.nextElementSibling;
         if (panel.style.maxHeight === "500px") {
             panel.style.maxHeight = "0";
-               this.style.backgroundColor = "var(--lightGray)";
-        this.style.color = "var(--black)";
-            
+            this.style.backgroundColor = "var(--lightGray)";
+            this.style.color = "var(--black)";
+
 
             // panel.style.backgroundColor = "var(--black)"
-            panel.style.color = "var(--lightGray)"
+            // panel.style.color = "var(--lightGray)"
 
         } else {
             panel.style.maxHeight = "500px";
