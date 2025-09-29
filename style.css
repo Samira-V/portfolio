@@ -154,10 +154,13 @@ body {
     justify-content: center;
     width: 100%;
     text-align: center;
+
 }
+
 
 .text span {
     color: var(--orenge);
+    margin-top: 0;
 }
 
 .hero-bottom {
@@ -669,13 +672,6 @@ width: 100%;
 
 }
 
-.more {
-    width: 32px;
-    height: 32px;
-    background-color: var(--lightGray);
-    border-radius: 50%;
-    padding: 4px;
-}
 
 .all-service-btn {
     all: unset;
@@ -684,7 +680,15 @@ width: 100%;
     border-radius: 40px;
     padding: 4px 6px;
     margin: 0;
-
+    
+}
+ .more {
+    width: 32px;
+    height: 32px;
+    background-color: var(--lightGray);
+    border-radius: 50%;
+    padding: 4px;
+    transform: translate(180deg)!important;
 }
 
 @media (width <=470px) {
@@ -884,6 +888,18 @@ width: 100%;
     color: #5c5b5b;
     border-radius: 20px;
     padding: 8px;
+}
+@media (width <= 640px){
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btns button {
+        font-size: 12px;
+        padding: 4px 6px;
+        width: 200px;
+        
+    }
 }
 
 .about-svg {
@@ -1268,6 +1284,11 @@ right:50px;
         /* width: 100%; */
         text-overflow: ellipsis;
     }
+    .accordion{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
 
 }
 
@@ -1483,15 +1504,18 @@ width: 100%;
     justify-content: center;
     margin-block: 10px;
     gap: 5px;
+     
+
 }
 .news-btns button{
     background-color: var(--orenge)
     ;
+     font-family: "Vazirmatn", sans-serif!important;
     color: #fff;
     border: none;
     outline: none;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
     cursor: pointer;
 }
 .square p{
