@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SamiraVaeidi portfolio</title>
     <link rel="stylesheet" href="./style.css">
@@ -19,15 +19,11 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">خانه</a></li>
+                        <li><a href="#" class="active">خانه</a></li>
                         <li><a href="">پروژه ها</a></li>
                         <li><a href="">درباره ی ما</a></li>
                         <li><a href="">اکسپلور</a></li>
-                        <li><a href="">
-                                <svg>
-                                    <use href="./images/search.svg#search"></use>
-                                </svg>
-                            </a></li>
+
                     </ul>
                 </div>
                 <div class="connect-btn">
@@ -40,10 +36,60 @@
             <div class="hero-top">
                 <div class="text">
 
-                    <h2> <span>سمیرا وعیدی </span>هستم</h2>
-                    <p>برنامه نویس فرانت اند از ایران</p>
+                    <h2><svg class="grass">
+                            <use href="./images/grass.svg#grass"></use>
+                        </svg> <span>سمیرا وعیدی </span>هستم</h2>
+                    <p>برنامه نویس فرانت اند از ایران
+
+                    </p>
+                </div>
+                <div id="hire-circle">
+                    <div class="circle-text-container">
+                        <div class="circular-text-wrapper">
+
+
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+                                <!-- تعاریف: مسیر دایره‌ای برای متن با قطر ۱۰۰ پیکسل -->
+                                <defs>
+                                    <path id="circlePath"
+                                        d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
+                                </defs>
+
+                                <!-- گروهی برای دایره و متن، تا با هم بچرخند -->
+                                <g>
+                                    <!-- انیمیشن چرخش را به کل گروه اعمال می‌کنیم -->
+                                    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+                                        from="0 50 50" to="360 50 50" dur="10s" repeatCount="indefinite" />
+
+                                    <!-- دایره اصلی با سایز ۱۰۰ پیکسل و بدون حاشیه -->
+                                    <circle cx="50" cy="50" r="45" fill="#fff" />
+
+                                    <!-- متن «استخدام» روی مسیر دایره‌ای -->
+                                    <text font-family="Vazirmatn, sans-serif" font-size="14" font-weight="bold"
+                                        fill="#020202">
+                                        <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+                                            استخدام * ریکت  * جاوا اسکریپت *  css  *
+                                        </textPath>
+                                    </text>
+                                </g>
+
+                                <!-- پیکان (شورون) در وسط دایره که ثابت می‌ماند و به راست اشاره می‌کند -->
+                                <g transform="translate(50, 50)">
+                                    <!-- شکل شورون را با استفاده از <path> می‌سازیم. -->
+                                    <!-- مختصات مسیر به گونه‌ای تنظیم شده که پیکان به سمت راست اشاره کند. -->
+                                    <path d="M 0,-10 L 10,0 L 0,10" fill="#FE4618" />
+                                </g>
+
+                            </svg>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
+
 
             <div class="hero-bottom">
                 <div class="hero-bottom-item right">
@@ -53,7 +99,8 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="desc-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                        <p class="desc-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                            از
                             طراحان گرافیک است
                             چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
                     </div>
@@ -86,10 +133,11 @@
                     <div class="portofilo-btns">
                         <button class="btn portofilo-btn">نمونه کارها</button>
                         <div>
-                            <button class="btn hire-btn"> <svg class="orenge white">
+                            <button class="btn hire-btn"> 
+                                استخدام
+                                <svg class="orenge white">
                                     <use href="./images/arrow.svg#arrow"></use>
                                 </svg>
-                                استخدام
                             </button>
 
 
@@ -104,7 +152,7 @@
                         </div>
                         <div class="two">
                             <p><a href="" class="black btn"> هوش مصنوعی</a></p>
-                            <p><a href="" class="black btn">بک اند</a></p>
+                            <p><svg class="bg-orenge"><use href="./images/flower.svg#flower"></use></svg></p>
                         </div>
                         <div class="three">
                             <p><a href="" class="black btn"> مقالات </a></p>
@@ -115,21 +163,21 @@
                     <div class="social">
                         <p>مارا دنبال کنید</p>
                         <div class="social-wrapper">
-                            <svg class="svg">
+                           <div>  <svg class="svg">
                                 <use href="./images/facebook.svg#facebook"></use>
-                            </svg>
+                            </svg></div>
                             <!-- <svg class="svg">
                                 <use href="./images/insta.svg#insta"></use>
                             </svg> -->
-                            <svg class="svg">
+                            <div><svg class="svg">
                                 <use href="./images/pintrest.svg#pintrest"></use>
-                            </svg>
-                            <svg class="svg">
+                            </svg></div>
+                            <div><svg class="svg">
                                 <use href="./images/x.svg#x-logo"></use>
-                            </svg>
-                            <svg class="svg">
+                            </svg></div>
+                           <div> <svg class="svg">
                                 <use href="./images/youtube.svg#youtube"></use>
-                            </svg>
+                            </svg></div>
                         </div>
                     </div>
                 </div>
@@ -137,33 +185,84 @@
         </div>
     </div>
     <!-- strat scrolling ticker  -->
-    <div class="scrolling-ticker">
-        <div class="scrolling-wraper  container">
-            <div class="scroll-items-wrapper ">
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+
+    <div class="our-scrolling-ticker">
+        <div class="scrolling-ticker-box">
+            <div class="scrolling-content">
+                <div><span>آموزش جاوااسکریپت</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+                    </svg></div>
+                <div><span>REACT JS</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+                    </svg></div>
+                <div><span>آموزش Css از صفر</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+                    </svg></div>
+                <div><span>HTML</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
+                    </svg></div>
+                <div><span>آموزش React js از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>REST FULL API</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>کامپوننت های جذاب</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>JAVASCRIPT</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش HTML از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>CSS 3</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش تخصصی فرانت اند</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>POSTMAN</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+
+                <!-- دوباره تکرار برای لوپ بی‌پایان -->
+                <div><span>آموزش جاوااسکریپت</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>REACT JS</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش Css از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>HTML</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش React js از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>REST FULL API</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>کامپوننت های جذاب</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>JAVASCRIPT</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش HTML از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>CSS 3</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش تخصصی فرانت اند</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>POSTMAN</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
             </div>
         </div>
     </div>
@@ -350,7 +449,8 @@
                     <div>
                         <p class="helper">درباره ی من</p>
                         <h2><span class="orenge-color">سمیرا وعیدی </span>کیه؟</h2>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است
                             چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
                     </div>
                     <div class="details">
@@ -468,33 +568,83 @@
         </div>
     </div>
     <!-- strat scrolling ticker  -->
-    <div class="scrolling-ticker">
-        <div class="scrolling-wraper  container">
-            <div class="scroll-items-wrapper ">
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+    <div class="our-scrolling-ticker">
+        <div class="scrolling-ticker-box">
+            <div class="scrolling-content">
+                <div><span>آموزش جاوااسکریپت</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+                    </svg></div>
+                <div><span>REACT JS</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+                    </svg></div>
+                <div><span>آموزش Css از صفر</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+                    </svg></div>
+                <div><span>HTML</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
+                    </svg></div>
+                <div><span>آموزش React js از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>REST FULL API</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>کامپوننت های جذاب</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>JAVASCRIPT</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش HTML از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>CSS 3</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش تخصصی فرانت اند</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>POSTMAN</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+
+                <!-- دوباره تکرار برای لوپ بی‌پایان -->
+                <div><span>آموزش جاوااسکریپت</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>REACT JS</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش Css از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>HTML</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش React js از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>REST FULL API</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>کامپوننت های جذاب</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>JAVASCRIPT</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش HTML از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>CSS 3</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش تخصصی فرانت اند</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>POSTMAN</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
             </div>
         </div>
     </div>
@@ -767,33 +917,83 @@
         </div>
     </div>
     <!-- strat scrolling ticker  -->
-    <div class="scrolling-ticker">
-        <div class="scrolling-wraper  container">
-            <div class="scroll-items-wrapper ">
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+    <div class="our-scrolling-ticker">
+        <div class="scrolling-ticker-box">
+            <div class="scrolling-content">
+                <div><span>آموزش جاوااسکریپت</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+                    </svg></div>
+                <div><span>REACT JS</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+                    </svg></div>
+                <div><span>آموزش Css از صفر</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
-                <div class="scroll-item">
-                    <p>جاوا اسکریپت</p>
-                    <svg class="flower-svg">
+                    </svg></div>
+                <div><span>HTML</span> <svg class="flower">
                         <use href="./images/flower.svg#flower"></use>
-                    </svg>
-                </div>
+                    </svg></div>
+                <div><span>آموزش React js از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>REST FULL API</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>کامپوننت های جذاب</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>JAVASCRIPT</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش HTML از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>CSS 3</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش تخصصی فرانت اند</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>POSTMAN</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+
+                <!-- دوباره تکرار برای لوپ بی‌پایان -->
+                <div><span>آموزش جاوااسکریپت</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>REACT JS</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش Css از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>HTML</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش React js از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>REST FULL API</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>کامپوننت های جذاب</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>JAVASCRIPT</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش HTML از صفر</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>CSS 3</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>آموزش تخصصی فرانت اند</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
+                <div><span>POSTMAN</span> <svg class="flower">
+                        <use href="./images/flower.svg#flower"></use>
+                    </svg></div>
             </div>
         </div>
     </div>
@@ -869,6 +1069,7 @@
         </div>
         <div class="bg-circle"></div>
     </div>
+
     <script src="./script.js"></script>
 </body>
 
