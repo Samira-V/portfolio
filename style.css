@@ -186,6 +186,11 @@ body {
     height: 70px;
 } 
 
+@media (width <= 640px){
+    #hire-circle{
+        display: none;
+    }
+}
 
 
 .text span {
