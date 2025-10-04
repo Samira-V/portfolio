@@ -20,171 +20,192 @@
                 <div class="menu">
                     <ul>
                         <li><a href="#" class="active">خانه</a></li>
-                        <li><a href="">پروژه ها</a></li>
-                        <li><a href="">درباره ی ما</a></li>
-                        <li><a href="">اکسپلور</a></li>
+                        <li><a href="">پروژه ها</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li onclick="handelClick(0)">
+                                        <a class="project" href="#">Creatix</a>
+                                    </li>
+                                    <li onclick="handelClick(1)">
+                                        <a class="project"
+                                            href="#">ZenCrypto</a>
 
+                                    </li>
+                                    
+                                    <li onclick="handelClick(2)">
+                                        <a class="project" href="#">پروژه ی 3</a>
+                        
                     </ul>
+                    <div class="project-img">
+                       <a href="https://creatix-sepia.vercel.app"> <img class="img img-active" src="./images/creatix.jpg" alt=""></a>
+                        <a href="https://zen-crypto-s4cv-git-master-samira-vs-projects.vercel.app"><img class="img" src="./images/zencrypto.png" alt=""></a>
+                        <img class="img" src="./images/team/1.jpg" alt="">
+                    </div>
                 </div>
-                <div class="connect-btn">
-                    <button class="btn">عضویت</button>
+                </li>
+                <li><a href="">درباره ی ما</a></li>
+                <li><a href="">اکسپلور</a></li>
+
+                </ul>
+            </div>
+            <div class="connect-btn">
+                <button class="btn">عضویت</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero container">
+        <div class="hero-top">
+            <div class="text">
+
+                <h3><svg class="grass">
+                        <use href="./images/grass.svg#grass"></use>
+                    </svg> <span>سمیرا وعیدی </span>هستم</h3>
+                <p>برنامه نویس فرانت اند از ایران
+
+                </p>
+            </div>
+            <div id="hire-circle">
+                <div class="circle-text-container">
+                    <div class="circular-text-wrapper">
+
+
+                        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+                            <!-- تعاریف: مسیر دایره‌ای برای متن با قطر ۱۰۰ پیکسل -->
+                            <defs>
+                                <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
+                            </defs>
+
+                            <!-- گروهی برای دایره و متن، تا با هم بچرخند -->
+                            <g>
+                                <!-- انیمیشن چرخش را به کل گروه اعمال می‌کنیم -->
+                                <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+                                    from="0 50 50" to="360 50 50" dur="10s" repeatCount="indefinite" />
+
+                                <!-- دایره اصلی با سایز ۱۰۰ پیکسل و بدون حاشیه -->
+                                <circle cx="50" cy="50" r="45" fill="#fff" />
+
+                                <!-- متن «استخدام» روی مسیر دایره‌ای -->
+                                <text font-family="Vazirmatn, sans-serif" font-size="14" font-weight="bold"
+                                    fill="#020202">
+                                    <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+                                        استخدام * ریکت * جاوا اسکریپت * css *
+                                    </textPath>
+                                </text>
+                            </g>
+
+                            <!-- پیکان (شورون) در وسط دایره که ثابت می‌ماند و به راست اشاره می‌کند -->
+                            <g transform="translate(50, 50)">
+                                <!-- شکل شورون را با استفاده از <path> می‌سازیم. -->
+                                <!-- مختصات مسیر به گونه‌ای تنظیم شده که پیکان به سمت راست اشاره کند. -->
+                                <path d="M 0,-10 L 10,0 L 0,10" fill="#FE4618" />
+                            </g>
+
+                        </svg>
+
+                    </div>
+
                 </div>
+
             </div>
         </div>
 
-        <div class="hero container">
-            <div class="hero-top">
-                <div class="text">
 
-                    <h3><svg class="grass">
-                            <use href="./images/grass.svg#grass"></use>
-                        </svg> <span>سمیرا وعیدی </span>هستم</h3>
-                    <p>برنامه نویس فرانت اند از ایران
-
-                    </p>
+        <div class="hero-bottom">
+            <div class="hero-bottom-item right">
+                <div class="qoute">
+                    <svg class="qoute">
+                        <use href="./images/quotation.svg#qoute"></use>
+                    </svg>
                 </div>
-                <div id="hire-circle">
-                    <div class="circle-text-container">
-                        <div class="circular-text-wrapper">
-
-
-                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-
-                                <!-- تعاریف: مسیر دایره‌ای برای متن با قطر ۱۰۰ پیکسل -->
-                                <defs>
-                                    <path id="circlePath"
-                                        d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
-                                </defs>
-
-                                <!-- گروهی برای دایره و متن، تا با هم بچرخند -->
-                                <g>
-                                    <!-- انیمیشن چرخش را به کل گروه اعمال می‌کنیم -->
-                                    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
-                                        from="0 50 50" to="360 50 50" dur="10s" repeatCount="indefinite" />
-
-                                    <!-- دایره اصلی با سایز ۱۰۰ پیکسل و بدون حاشیه -->
-                                    <circle cx="50" cy="50" r="45" fill="#fff" />
-
-                                    <!-- متن «استخدام» روی مسیر دایره‌ای -->
-                                    <text font-family="Vazirmatn, sans-serif" font-size="14" font-weight="bold"
-                                        fill="#020202">
-                                        <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
-                                            استخدام * ریکت * جاوا اسکریپت * css *
-                                        </textPath>
-                                    </text>
-                                </g>
-
-                                <!-- پیکان (شورون) در وسط دایره که ثابت می‌ماند و به راست اشاره می‌کند -->
-                                <g transform="translate(50, 50)">
-                                    <!-- شکل شورون را با استفاده از <path> می‌سازیم. -->
-                                    <!-- مختصات مسیر به گونه‌ای تنظیم شده که پیکان به سمت راست اشاره کند. -->
-                                    <path d="M 0,-10 L 10,0 L 0,10" fill="#FE4618" />
-                                </g>
-
-                            </svg>
-
-                        </div>
-
+                <div>
+                    <p class="desc-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                        از
+                        طراحان گرافیک است
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                </div>
+                <div class="members">
+                    <div class="member">
+                        <img src="./images/team/1.jpg" alt="">
                     </div>
-
+                    <div class="member">
+                        <img src="./images/team/5.jpg" alt="">
+                    </div>
+                    <div class="member">
+                        <img src="./images/team/3.jpg" alt="">
+                    </div>
+                    <div class="member">
+                        <img src="./images/team/4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="reviews-count">
+                    <p class="review">
+                        ۱۵۰+ نقد و بررسی ها <span>(۴.۵ از ۵)</span>
+                    </p>
+                    <span class="subtxt">نقد و بررسی توسط مشتریان</span>
                 </div>
             </div>
+            <div class="hero-bottom-item center background">
 
-
-            <div class="hero-bottom">
-                <div class="hero-bottom-item right">
-                    <div class="qoute">
-                        <svg class="qoute">
-                            <use href="./images/quotation.svg#qoute"></use>
-                        </svg>
-                    </div>
+                <div class="pic">
+                    <img src="./images/porofileImg.png" alt="">
+                </div>
+                <div class="portofilo-btns">
+                    <button class="btn portofilo-btn">نمونه کارها</button>
                     <div>
-                        <p class="desc-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-                            از
-                            طراحان گرافیک است
-                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
-                    </div>
-                    <div class="members">
-                        <div class="member">
-                            <img src="./images/team/1.jpg" alt="">
-                        </div>
-                        <div class="member">
-                            <img src="./images/team/5.jpg" alt="">
-                        </div>
-                        <div class="member">
-                            <img src="./images/team/3.jpg" alt="">
-                        </div>
-                        <div class="member">
-                            <img src="./images/team/4.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="reviews-count">
-                        <p class="review">
-                            ۱۵۰+ نقد و بررسی ها <span>(۴.۵ از ۵)</span>
-                        </p>
-                        <span class="subtxt">نقد و بررسی توسط مشتریان</span>
+                        <button class="btn hire-btn">
+                            استخدام
+                            <svg class="orenge white">
+                                <use href="./images/arrow.svg#arrow"></use>
+                            </svg>
+                        </button>
+
+
                     </div>
                 </div>
-                <div class="hero-bottom-item center background">
-
-                    <div class="pic">
-                        <img src="./images/porofileImg.png" alt="">
+            </div>
+            <div class="hero-bottom-item left">
+                <div class="items-wrapper">
+                    <div class="one">
+                        <p><a href="" class="orenge btn">طراحی موبایل</a></p>
+                        <p><a href="" class="black btn">فرانت اند</a></p>
                     </div>
-                    <div class="portofilo-btns">
-                        <button class="btn portofilo-btn">نمونه کارها</button>
-                        <div>
-                            <button class="btn hire-btn">
-                                استخدام
-                                <svg class="orenge white">
-                                    <use href="./images/arrow.svg#arrow"></use>
-                                </svg>
-                            </button>
-
-
-                        </div>
+                    <div class="two">
+                        <p><a href="" class="black btn"> هوش مصنوعی</a></p>
+                        <p><svg class="bg-orenge">
+                                <use href="./images/flower.svg#flower"></use>
+                            </svg></p>
                     </div>
+                    <div class="three">
+                        <p><a href="" class="black btn"> مقالات </a></p>
+                        <p><a href="" class="orenge btn"> سوالات پرتکرار </a></p>
+                    </div>
+
                 </div>
-                <div class="hero-bottom-item left">
-                    <div class="items-wrapper">
-                        <div class="one">
-                            <p><a href="" class="orenge btn">طراحی موبایل</a></p>
-                            <p><a href="" class="black btn">فرانت اند</a></p>
-                        </div>
-                        <div class="two">
-                            <p><a href="" class="black btn"> هوش مصنوعی</a></p>
-                            <p><svg class="bg-orenge">
-                                    <use href="./images/flower.svg#flower"></use>
-                                </svg></p>
-                        </div>
-                        <div class="three">
-                            <p><a href="" class="black btn"> مقالات </a></p>
-                            <p><a href="" class="orenge btn"> سوالات پرتکرار </a></p>
-                        </div>
-
-                    </div>
-                    <div class="social">
-                        <p>مارا دنبال کنید</p>
-                        <div class="social-wrapper">
-                            <div> <svg class="svg">
-                                    <use href="./images/facebook.svg#facebook"></use>
-                                </svg></div>
-                            <!-- <svg class="svg">
+                <div class="social">
+                    <p>مارا دنبال کنید</p>
+                    <div class="social-wrapper">
+                        <div> <svg class="svg">
+                                <use href="./images/facebook.svg#facebook"></use>
+                            </svg></div>
+                        <!-- <svg class="svg">
                                 <use href="./images/insta.svg#insta"></use>
                             </svg> -->
-                            <div><svg class="svg">
-                                    <use href="./images/pintrest.svg#pintrest"></use>
-                                </svg></div>
-                            <div><svg class="svg">
-                                    <use href="./images/x.svg#x-logo"></use>
-                                </svg></div>
-                            <div> <svg class="svg">
-                                    <use href="./images/youtube.svg#youtube"></use>
-                                </svg></div>
-                        </div>
+                        <div><svg class="svg">
+                                <use href="./images/pintrest.svg#pintrest"></use>
+                            </svg></div>
+                        <div><svg class="svg">
+                                <use href="./images/x.svg#x-logo"></use>
+                            </svg></div>
+                        <div> <svg class="svg">
+                                <use href="./images/youtube.svg#youtube"></use>
+                            </svg></div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- strat scrolling ticker  -->
 
@@ -754,7 +775,7 @@
         </div>
 
     </div>
-     <!-- strat scrolling ticker  -->
+    <!-- strat scrolling ticker  -->
     <div class="our-scrolling-ticker">
         <div class="scrolling-ticker-box">
             <div class="scrolling-content">
@@ -924,7 +945,7 @@
                     </div>
                     <div class="connect-social">
                         <p>درارتباط بمانید</p>
-                         <div class="social-wrapper">
+                        <div class="social-wrapper">
                             <div> <svg class="svg">
                                     <use href="./images/facebook.svg#facebook"></use>
                                 </svg></div>
@@ -946,7 +967,7 @@
             </div>
         </div>
     </div>
-     <!-- strat scrolling ticker  -->
+    <!-- strat scrolling ticker  -->
     <div class="our-scrolling-ticker">
         <div class="scrolling-ticker-box">
             <div class="scrolling-content">

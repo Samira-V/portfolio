@@ -3,6 +3,8 @@ const accordion = document.querySelectorAll('.accordion')
 const accordionFaq = document.querySelectorAll('.accordion-faq')
 const arrow = document.querySelector('.arrow')
 const accordionSvg = document.querySelectorAll('.accordion-svg')
+const images = document.querySelectorAll(".img")
+const projects = document.querySelectorAll(".project")
 console.log(arrow)
 for (i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener("click", function () {
@@ -61,4 +63,16 @@ for (i = 0; i < accordionFaq.length; i++) {
 
         }
     });
+}
+
+
+const handelClick = (index)=>{
+projects.forEach((project , i) => {
+if(index == i){
+    images[i].classList.add("img-active")
+    
+}else{
+    images[i].classList.remove("img-active")
+}
+})
 }
