@@ -123,6 +123,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    
 }
 
 .menu svg {
@@ -133,38 +134,51 @@ body {
 
 .menu ul li a {
     color: #534f4f;
-
+  display: flex;
+    align-items: center;
+    gap: 3px;
 }
 
-.menu ul li:hover .menu ul li a {
+.menu ul li a:hover  {
     color: var(--orenge);
     border-bottom: 1px solid var(--orenge);
 }
 
 .menu ul li:hover .submenu{
     display: flex;
+  
 }
-
-.submenu {
+.arrow-down{
+    fill: #534f4f;
+    width: 10px!important;
+    height: 10px;
     display: flex;
+    align-items: center;
+    
+}
+.submenu {
+    /* display: flex; */
     position: absolute;
-    top: 37px;
+    top: 35px;
     border-radius: 20px;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     z-index: 3;
     /* width: 100%; */
        background-color: #fff;
     display: flex;
     gap: 20px;
 display: none;
+ 
+
 
 }
 .submenu ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 5px;
 }
 
 .submenu .project-img {
@@ -177,6 +191,7 @@ display: none;
 
 .project-img .img {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -192,28 +207,26 @@ display: none;
 }
 
 .submenu ul li {
-    padding: 10px;
+    padding: 2px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
+  width: 200px;
 }
 
 .submenu ul li a {
-    width: 100px;
-    padding: 10px;
+  
+    padding: 2px;
 }
 
 .submenu ul li a:hover {
     color: var(--orenge);
 }
+.submenu ul li a:hover .arrow-down{
+    fill: var(--orenge)!important;
+}
 
-/* @media (width > 1300px ){
-    .submenu ul li{
-        width: 23.5vw;
-    }
-} */
 
 .connect-btn .btn {
     all: unset;
