@@ -2,7 +2,7 @@
 const accordion = document.querySelectorAll('.accordion')
 const accordionFaq = document.querySelectorAll('.accordion-faq')
 const arrow = document.querySelector('.arrow')
-const accordionSvg = document.querySelector('.accordion-svg')
+const accordionSvg = document.querySelectorAll('.accordion-svg')
 console.log(arrow)
 for (i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener("click", function () {
@@ -11,8 +11,8 @@ for (i = 0; i < accordion.length; i++) {
 
         this.style.backgroundColor = "var(--black)";
         this.style.color = "var(--lightGray)";
-        accordionSvg.style.backgroundColor = "var(--orenge)"
-        accordionSvg.style.fill = "#fff"
+        // accordionSvg.style.backgroundColor = "var(--orenge)"
+        // accordionSvg.style.fill = "#fff"
         // this.style.padding = "10px";
 
         let panel = this.nextElementSibling;
