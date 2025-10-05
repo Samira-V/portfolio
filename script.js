@@ -57,3 +57,8 @@ const handelHover = (index) => {
         }
     })
 }
+const mobileMenu = document.querySelector(".mobile-menu-container")
+mobileMenu.addEventListener("click", () => {
+   
+    mobileMenu.classList.toggle('openMenu')
+})
