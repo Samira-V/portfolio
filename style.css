@@ -1915,7 +1915,132 @@ textarea {
     background-color: var(--orenge) !important;
     padding: 2px;
 }
+/* start testimonial styles  */
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.testimonial-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.testimonial-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.testimonial-card-container{
+   display: grid;
+   grid-template-columns: repeat(2 , 1fr);
+gap: 50px;
+}
+.testimonial-card{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  
+     background-color: var(--lightGray);
+     border-radius: 20px;
+     border: 1px solid #ccc;
 
+}
+.card-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  
+}
+.card-top div{
+    display: flex;
+   
+}
+.costumer-img{
+    margin-left: 15px;
+}
+.costumer-img img{
+    width: 70px;
+    height:70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+   
+}
+.costumer-details{
+    display: flex;
+    flex-direction: column;
+}
+.costumer-details p{
+    font-size: 14px;
+    font-weight: bold;
+}
+.costumer-details span{
+    color: #979797;
+    font-size: 12px;
+}
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.score span{
+    margin-right: 10px;
+    color: var(--black);
+}
+.star{
+    width: 12px;
+    height: 12px;
+    fill: var(--orenge);
+}
+.qoute{
+    width: 35px;
+    height: 35px;
+    fill: var(--orenge);
+    background-color: #fff;
+    padding:8px;
+    border-radius: 50%;
+    border: 1px solid #e8e5e5;
+}
+.card-bottom{
+    text-align: justify;
+    font-size: 14px;
+    
+}
+.pagenation{
+    display: flex;
+    gap: 4px;
+    margin-block:40px;
+   
+    
+}
+.pagenum{
+
+    width: 20px;
+    height: 5px;
+    border-radius: 5px;
+  
+   background-color: #ccc;
+}
+.active-page{
+    background-color: var(--orenge);
+}
+@media (width <= 768px){
+    .testimonial-card-container{
+   display: grid;
+   grid-template-columns: 1fr;
+gap: 30px;
+}
+}
 /* start blogs styles  */
 .blogs {
     width: 100%;
