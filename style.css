@@ -331,23 +331,61 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    flex-direction: column;
+    /* flex-direction: column; */
 
     padding: 50px;
 
 }
-
-.mobile-menu ul li {
+.mobile-menu ul li{
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.mobile-menu .submenu{
+    position: absolute;
+    right:-80px;
+    top: 20px;
+    width: 350px;
+    height: 70px;
+   
+    padding: 4px;
+    gap: 4px;
+    
+}
+.mobile-menu .submenu ul {
     display: flex;
     align-items: center;
+    padding: 5px!important;
+    gap: 5px!important;
     justify-content: center;
+    flex-direction: row!important;
+}
+.mobile-menu .submenu ul li{
+    width: auto!important;
+}
+.mobile-menu ul li:hover .submenu {
+    display: flex;
+    max-height: 70px;
+    visibility: visible;
 
 }
 
+.mobile-menu .menu-item {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.mobile-menu svg{
+    fill: #000;
+}
+
 .mobile-menu ul li a {
-    font-size: 20px;
+    font-size: 12px!important;
     color: #000;
-    gap: 40px;
+    gap: 30px;
 }
 
 .side-menu {
