@@ -439,7 +439,7 @@ max-width: 0;
     top: 0;
     right: 0;
     transition: all .5s;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .mobile-menu-container.openMenu .side-menu {
