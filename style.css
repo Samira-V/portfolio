@@ -393,9 +393,7 @@ max-width: 0;
     font-size: 10px;
     
 }
-.mobile-menu .submenu ul li a{
-    
-}
+
 
 .mobile-menu ul li:hover .submenu {
    max-width: 100%;
