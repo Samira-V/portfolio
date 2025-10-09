@@ -63,3 +63,4 @@ burger.addEventListener("click", () => {
    
     mobileMenu.classList.toggle('openMenu')
 })
+

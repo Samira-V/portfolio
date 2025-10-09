@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
-   <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تماس با ما</title>
 </head>
+
 <body>
-      <div class="header">
+    <div class="header">
 
         <div class="header-container container">
             <div class="navbar ">
@@ -18,7 +24,7 @@
                 <div class="menu">
                     <ul>
                         <li><a href="./index.html">خانه</a></li>
-                        <li><a href="./projects.html" >پروژه ها <svg class="arrow-down">
+                        <li><a href="./projects.html">پروژه ها <svg class="arrow-down">
                                     <use href="./images/arrow-down.svg#arrow-down"></use>
                                 </svg></a>
                             <div class="submenu">
@@ -313,7 +319,13 @@
             </div>
         </div>
     </div>
-         <!-- strat scrolling ticker  -->
+       <!-- start map section  -->
+    <div class="map">
+        <div class="map-container container">
+            <div id="map"></div>
+        </div>
+    </div>
+    <!-- strat scrolling ticker  -->
 
     <div class="our-scrolling-ticker">
         <div class="scrolling-ticker-box">
@@ -395,6 +407,10 @@
             </div>
         </div>
     </div>
+ 
+
+
+
     <!-- start footer section  -->
     <div class="footer">
         <div class="footer-container container">
@@ -467,6 +483,7 @@
         </div>
         <div class="bg-circle"></div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./connect.js"></script>
 </body>
+
 </html>
