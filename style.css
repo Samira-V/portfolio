@@ -172,7 +172,7 @@ body {
     z-index: 3;
 
     background-color: #fff;
-
+overflow: hidden;
     gap: 20px;
     max-height: 0;
     visibility: hidden;
@@ -581,6 +581,18 @@ max-width: 0;
     display: flex;
 
 }
+.member:nth-of-type(1){
+transform: translateX(-30px);
+z-index: 4;
+}
+.member:nth-of-type(2){
+transform: translateX(-20px);
+z-index: 3;
+}
+.member:nth-of-type(3){
+transform: translateX(-10px);
+
+}
 
 
 .member img {
@@ -589,8 +601,8 @@ max-width: 0;
     border-radius: 100%;
     object-fit: cover;
     margin-block: 20px;
-
-
+border: 4px solid #fff;
+filter: grayscale(100%);
 }
 
 .review {
@@ -684,6 +696,10 @@ max-width: 0;
 
 .portofilo-btn {
     color: var(--black) !important;
+    cursor: pointer;
+}
+.hero-portofilo-btn{
+    color: var(--black)!important;
     cursor: pointer;
 }
 
