@@ -2767,3 +2767,50 @@ textarea {
 .active {
     max-height: 150px;
 }
+
+
+/* projectts page style  */
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 50px;
+}
+.title ul{
+    display: flex;
+     align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-block: 20px;
+}
+.title ul li a {
+    color: var(--background-color);
+
+}
+.title ul li .cative{
+    color: var(--orenge)!important;
+}
+.project-btn{
+     display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.more-projects{
+   all: unset;
+    background-color: var(--orenge);
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 14px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
