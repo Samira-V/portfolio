@@ -18,3 +18,10 @@ function onMapClick(e) {
     
 }
 map.on('click', onMapClick);
+
+const mobileMenu = document.querySelector(".mobile-menu-container")
+const burger = document.querySelector(".burger")
+burger.addEventListener("click", () => {
+   
+    mobileMenu.classList.toggle('openMenu')
+})
