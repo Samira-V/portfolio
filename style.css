@@ -2232,15 +2232,19 @@ scroll-snap-type:  x mandatory;
 }
 @media (width <=945px) {
     .reward-card {
-        width: 100vw;
+        width: 80vw;
     }
 }
-
-.reward-card-top div {
+@media (width > 1500px) {
+    .reward-card {
+        width: 80%;
+    }
+}
+.reward-card-top  {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
     gap: 50px;
 }
 
