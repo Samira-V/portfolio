@@ -2163,7 +2163,7 @@ input {
     align-items: center;
     justify-content: center;
     width: 100%;
-    overflow: scroll;
+    /* overflow: scroll; */
     background-color: var(--lightGray);
 }
 
