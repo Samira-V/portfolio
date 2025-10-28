@@ -2587,7 +2587,7 @@ textarea {
 
 .testimonial-card-container {
     display: flex;
-  
+  width: 100vw;
     align-items: center;
     justify-content: space-around;
     flex-shrink: 0;
